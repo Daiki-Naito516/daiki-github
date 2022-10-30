@@ -187,37 +187,69 @@ section {
     margin-bottom: 25px;
 }
 
-.FirstViewContent__buttons-a {
+.FirstViewContent__buttons {
     display: flex;
     
 }
-.FirstViewContent__buttons-a {
-    margin-right: 15px;
-    width: 306px;
+
+
+
+.FirstViewContent__buttons a {
     align-items: center;
     background-color: #f79214;
-    border:none;
+    border: none;
     border-radius: 38px;
+    color: #fff;
     cursor: pointer;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     font-size: 16px;
     font-weight: 700;
     height: 64px;
-    justify-content:center;
-    text-decoration:none;
+    justify-content: center;
+    text-decoration: none;
     text-align: center;
+    width: 100%;
 }
 
+/*.FirstViewContent__buttons {*/
+/*    margin-right: 15px;*/
+/*    width: 306px;*/
+/*    align-items: center;*/
+/*    background-color: #f79214;*/
+/*    border:none;*/
+/*    border-radius: 38px;*/
+/*    cursor: pointer;*/
+    /*display: flex;*/
+    /*flex-direction:column;*/
+/*    font-size: 16px;*/
+/*    font-weight: 700;*/
+/*    height: 64px;*/
+    /*justify-content:center;*/
+/*    text-decoration:none;*/
+/*    text-align: center;*/
+/*}*/
 
 
-.FirstViewContent__buttons_first {
+
+/*.FirstViewContent__buttons_first {*/
+/*    margin-right: 15px;*/
+/*    width: 306px;*/
+/*}*/
+
+.FirstViewContent__buttons a:first-of-type {
     margin-right: 15px;
     width: 306px;
-
 }
 
-.FirstViewContent__buttons_last {
+/*.FirstViewContent__buttons_last {*/
+/*    background-color: #fff;*/
+/*    border: 1px solid #e0e0e0;*/
+/*    color: #333;*/
+/*    width: 176px;*/
+/*}*/
+
+.FirstViewContent__buttons a:last-of-type {
     background-color: #fff;
     border: 1px solid #e0e0e0;
     color: #333;
