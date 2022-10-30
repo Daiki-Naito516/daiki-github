@@ -22,6 +22,16 @@ meta {
     display:none;
 }
 
+@media screen and (max-width: 1080px) {
+.HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+
 
 .HeaderLogo__image {
     display: block;
@@ -132,6 +142,9 @@ li {
     height: 40px;
     padding : 0 20px;
 }
+
+
+
 
 .FirstView {
     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
