@@ -1,3 +1,5 @@
+
+
 body {
     color: #333;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -18,18 +20,51 @@ header {
     display: block;
 }
 
+/*@media screen and (max-width: 1080px) {*/
+/*.Header--common {*/
+/*    position: fixed !important;*/
+/*}*/
+/*}*/
+
+
+
 meta {
     display:none;
 }
 
-@media screen and (max-width: 1080px) {
+
+
+@media screen and (max-width: 1080px)
 .HeaderNavHamburger {
     cursor: pointer;
-    display: block;
+    /*display: block;*/
     position: relative;
     width: 30px;
     height: 21px;
     z-index: 100;
+}
+
+
+@media screen and (max-width: 1080px)
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+    
+}
+
+.HeaderNavHamburger__line:first-child {
+    top: 0px;
+}
+
+.HeaderNavHamburger__line:last-child {
+    top: 100px;
 }
 
 
@@ -67,6 +102,20 @@ a {
     color: #333;
     text-decoration: none;
 }
+
+.HeaderNavHumburger span,
+.HeaderNavHumburger span:before
+.HeaderNavHumburger span:after {
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+}
+
+
+
 
 .HeaderNavListItem__link>span:first-child {
     font-family: 'Lato',sans-serif;
@@ -155,9 +204,9 @@ li {
 
 }
 
-img {
-    background-size: cover;
-}
+/*img {*/
+    /*background-size: cover;*/
+/*}*/
 
 .FirstView__main-image {
     width: 100%;
